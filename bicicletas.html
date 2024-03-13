@@ -7,11 +7,16 @@
   <title>Bicicletas | Bikcraft</title>
   <meta name="description" content="Bicicletas Bikcraft">
 
+  <link rel="preload" href="./css/style.css" as="style">
   <link rel="stylesheet" href="./css/style.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Poppins:wght@500;600&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <script>
+    document.documentElement.classList.add('js');
+  </script>
 </head>
 
 <body id="seguros">
@@ -40,11 +45,11 @@
 
 
     <div class="bicicletas container">
-      <div class="bicicletas-imagem">
+      <div class=" bicicletas-imagem fadeInLeft" data-anime="200">
         <img src="./img/bicicletas/nimbus.jpg" alt="bicicleta preta">
         <span class="font-2-m cor-0">R$4999</span>
       </div>
-      <div class="bicicletas-conteudo">
+      <div class="bicicletas-conteudo fadeInLeft" data-anime="400">
         <h2 class="font-1-xl">Nimbus Stark</h2>
         <p class="font-2-s cor-8">A Nimbus Stark é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <ul class="font-1-m cor-8">
@@ -53,18 +58,18 @@
           <li><img src="./img/icones/velocidade.svg" alt="">50 km/h</li>
           <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
         </ul>
-        <a class="botao seta" href="./bicicletas/nimbus.html">Mais Sobre</a>
+        <a class="botao seta fadeInLeft" data-anime="600" href="./bicicletas/nimbus.html">Mais Sobre</a>
       </div>
     </div>
 
 
     <div class="bicicletas-bg">
       <div class="bicicletas container">
-        <div class="bicicletas-imagem">
+        <div class="bicicletas-imagem fadeInRight" data-anime="200">
           <img src="./img/bicicletas/magic.jpg" alt="bicicleta preta">
           <span class="font-2-m cor-0">R$2499</span>
         </div>
-        <div class="bicicletas-conteudo">
+        <div class="bicicletas-conteudo fadeInRight" data-anime="400">
           <h2 class="font-1-xl cor-0">Magic Might</h2>
           <p class="font-2-s cor-5">A Magic Might é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
           <ul class="font-1-m cor-5">
@@ -73,18 +78,18 @@
             <li><img src="./img/icones/velocidade.svg" alt="">40 km/h</li>
             <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
           </ul>
-          <a class="botao seta" href="./bicicletas/magic.html">Mais Sobre</a>
+          <a class="botao seta fadeInRight" data-anime="600" href="./bicicletas/magic.html">Mais Sobre</a>
         </div>
       </div>
     </div>
 
 
     <div class="bicicletas container">
-      <div class="bicicletas-imagem">
+      <div class="bicicletas-imagem fadeInLeft" data-anime="200">
         <img src="./img/bicicletas/nebula.jpg" alt="bicicleta preta">
         <span class="font-2-m cor-0">R$3999</span>
       </div>
-      <div class="bicicletas-conteudo">
+      <div class="bicicletas-conteudo fadeInLeft" data-anime="400">
         <h2 class="font-1-xl">Nebula Cosmic</h2>
         <p class="font-2-s cor-8">A Nebula Cosmic é a melhor Bikcraft já criada pela nossa equipe. Ela vem equipada com os melhores acessórios, o que garante maior velocidade.</p>
         <ul class="font-1-m cor-8">
@@ -93,7 +98,7 @@
           <li><img src="./img/icones/velocidade.svg" alt="">45 km/h</li>
           <li><img src="./img/icones/rastreador.svg" alt="">Rastreador</li>
         </ul>
-        <a class="botao seta" href="./bicicletas/nebula.html">Mais Sobre</a>
+        <a class="botao seta fadeInLeft" data-anime="600" href="./bicicletas/nebula.html">Mais Sobre</a>
       </div>
 
     </div>
@@ -138,6 +143,8 @@
       <p class="footer-copy font2-m cor-6">Bikcraft © Alguns direitos reservados.</p>
     </div>
   </footer>
+  <script src="./js/plugins/simple-anime.js"></script>;
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

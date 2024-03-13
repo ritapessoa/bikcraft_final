@@ -16,18 +16,24 @@
 
 .form input[type="text"],
 .form input[type="email"],
+.form select,
 .form textarea {
   font: 400 1rem/1.5 "Roboto", sans-serif;
   background: var(--cor-1);
-  border: 1px solid var(--cor-2);
+  border: 1px solid var(--cor-1);
   padding: 12px;
   border-radius: 4px;
   width: 100%;
   box-sizing: border-box;
 }
 
+.form select {
+  border: 2px solid var(--cor-4);
+}
+
 .form input[type="text"]:focus,
 .form input[type="email"]:focus,
+.form select:focus,
 .form textarea:focus {
   outline: none;
   border-color: var(--cor-p1);
